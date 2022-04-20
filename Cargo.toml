@@ -12,6 +12,14 @@ repository = "https://github.com/mattfbacon/bindable"
 [dependencies]
 thiserror = "1"
 
+[dependencies.actix-http]
+version = "3"
+optional = true
+
+[dependencies.actix-service]
+version = "2"
+optional = true
+
 [dependencies.actix-web]
 version = "4"
 optional = true
@@ -22,5 +30,5 @@ optional = true
 
 [features]
 default = ["with-serde"]
-with-actix = ["actix-web"]
+with-actix = ["actix-http", "actix-service", "actix-web"]
 with-serde = ["serde"]
