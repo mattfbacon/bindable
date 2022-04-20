@@ -1,6 +1,6 @@
 [package]
 name = "bindable"
-version = "0.1.0"
+version = "0.1.1"
 authors = ["Matt Fellenz <matt@felle.nz>"]
 description = "An abstraction over an address that a server can bind to: either an IP address for TCP or a path for a Unix socket"
 documentation = "https://docs.rs/bindable"
