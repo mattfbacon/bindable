@@ -13,7 +13,7 @@ mod serde;
 #[cfg(test)]
 mod test;
 
-#[derive(Debug)]
+#[derive(Debug, Clone, PartialEq, Eq, Hash)]
 pub enum BindableAddr {
 	Unix(PathBuf),
 	Tcp(SocketAddr),
