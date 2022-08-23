@@ -1,32 +1,32 @@
 [package]
-name = "bindable"
-version = "0.1.2"
 authors = ["Matt Fellenz <matt@felle.nz>"]
 description = "An abstraction over an address that a server can bind to: either an IP address for TCP or a path for a Unix socket"
 documentation = "https://docs.rs/bindable"
 edition = "2021"
 license = "MIT OR Apache-2.0"
+name = "bindable"
 readme = "README.md"
 repository = "https://github.com/mattfbacon/bindable"
+version = "0.1.2"
 
 [dependencies]
 thiserror = "1"
 
 [dependencies.actix-http]
-version = "3"
 optional = true
+version = "3"
 
 [dependencies.actix-service]
-version = "2"
 optional = true
+version = "2"
 
 [dependencies.actix-web]
-version = "4"
 optional = true
+version = "4"
 
 [dependencies.serde]
-version = "1"
 optional = true
+version = "1"
 
 [features]
 default = ["with-serde"]

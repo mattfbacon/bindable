@@ -1,10 +1,10 @@
-use super::{BindBindableExt, BindableAddr};
-
 use actix_http::{Request, Response};
 use actix_service::{IntoServiceFactory, Service, ServiceFactory};
 use actix_web::body::MessageBody;
 use actix_web::dev::AppConfig;
 use actix_web::{Error, HttpServer};
+
+use super::{BindBindableExt, BindableAddr};
 
 impl<F, I, S, B> BindBindableExt for HttpServer<F, I, S, B>
 where
